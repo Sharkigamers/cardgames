@@ -1,0 +1,61 @@
+.country-name {
+    color: #f59934;
+    font-weight: bold;
+    font-size: x-large;
+    display: block;
+    text-align: center;
+}
+
+.textfield {
+    color: grey;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid #555;
+    background: rgba(0,0,0,.9);
+    font-weight: 400;
+    font-style: italic;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 13px;
+    width: 75%;
+    height: 38px;
+    padding: 0 0 0 8px;
+    margin: 10px 11%;
+}
+
+.short-description {
+    color: #f59934;
+    font-weight: bold;
+    font-size: larger;
+    display: block;
+    text-align: center;
+    margin: 10px 35px;
+}
+
+.description {
+    color: #f59934;
+    font-weight: bold;
+    font-size: medium;
+    display: block;
+    text-align: center;
+    margin: 15px 20px;
+}
+
+.date {
+    margin: 12px 35px;
+    font-size: medium;
+}
+
+.weather-img {
+    height: 110px;
+    width: 110px;
+}
+
+select {
+    background: black;
+    color: #f59934;
+    border: 0px;
+    width: 70px;
+    height: 30px;
+    margin: 10px;
+}

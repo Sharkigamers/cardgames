@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashub</title>
+
+        <base href="/">
+
+        <link rel = "stylesheet" type = "text/css" href = "./css/mainPage.css">
+        <link rel = "stylesheet" type = "text/css" href = "./css/widget.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="logger" class="box-container box-container-overflow box-container-fancy box-container-fancy-fixed">
+            <div class="box-wrapper">
+                <div class="box-skin">
+                    <div id="connection">
+                        <h1 class="login-main-text" style="font-weight: 700;">
+                            Connect to your account
+                        </h1>
+                        <div class="box-wrapper2">
+                            <div class="login-extern-connection">
+                            <h3 style="font-weight: 700;">
+                                Connect with
+                            </h3>
+                            <a href="/auth/google">
+                                <img src="./pictures/svg/login-google.svg" />
+                            </a>
+                            </div>
+                            <div class="login-intern-connection">
+                                <h3 style="font-weight: 700;">
+                                    Login
+                                </h3>
+                                <form>
+                                    <input class="login-textfield-connection" type="email" name="email" value="Email" onfocus="this.value=''" required></input>
+                                    <input class="login-textfield-connection" type="password" name="password" value="*********" onfocus="this.value=''" required></input>
+                                    <button type="submit" formmethod="POST" class="login-button-connection" onclick="personalAccountConnection()">
+                                        Connect
+                                    </button>
+                                </form>
+                                <div style="margin: 5px 0px;">
+                                    Or
+                                    <a class="login-create-button" href="/signup">Create an account</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin: 5px 0px; color: white; font-size: 14px;">
+                            By connecting or creating an account you're accepting the
+                            <a href="https://fr.pornhub.com/information/terms#terms" class="login-create-button">Terms and Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

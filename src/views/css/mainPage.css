@@ -1,0 +1,335 @@
+.dashboard {
+    text-align: left;
+    min-height: 100vh;
+    align-items: flex-start;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    z-index: 8010;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+}
+
+.dashboard-button-title {
+    outline: none;
+    text-decoration: none;
+    background: transparent;
+    border: 0px;
+    color: white;
+    margin: 11px 0px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dashboard-overflow {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.dashboard-button-title-dash {
+    display: inline-block;
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+.dashboard-button-title-hub {
+    background-color: #f59934;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.dashboard-add-widget {
+    background: transparent;
+    outline: none;
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 0px 0px 35%;
+}
+
+.dashboard-header-wrapper {
+    background-color: #1b1b1b;
+    width: 100%;
+    height: 70px;
+}
+
+.dashboard-header-content {
+    margin: 0% 15%;
+    background: transparent;
+}
+
+.dashboard-access-connection {
+    vertical-align: middle;
+    background: transparent;
+    outline: none;
+    border: 0px;
+    margin: 0px 0px 0px 35%;
+}
+
+#widget-selection ul {
+    background: #1b1b1b!important;
+    background-color: #1b1b1b!important;
+    padding: 10px 45%;
+    margin: 0%;
+}
+
+#widget-selection li {
+    list-style: none;
+}
+
+#widget-selection li button {
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    color: #f90;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.delete-widget {
+    display: block;
+    margin-left: 93%;
+    margin-top: 1%;
+    background: transparent;
+    border: 0px;
+    outline: none;
+}
+
+.dashboard-widget-page {
+    width: 100%;
+    height: 100%;
+}
+
+.dashboard-widget-content {
+    height: 300px;
+    background: #000;
+    border-bottom: 1px solid #1f1f1f;
+    margin: 0px 1%;
+}
+
+.dashboard-widget {
+    display: inline-block;
+    width: 30%;
+    height: 93%;
+    background: transparent;
+    border: 1px solid #1f1f1f;
+    border-radius: 5px;
+    background-color: #1f1f1f;
+    margin: 10px 27px 0px 27px;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.box-container {
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.box-container-overflow {
+    overflow: auto;
+    overflow-y: scroll;
+}
+
+.box-container-fancy-fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.box-container-fancy {
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: 8010;
+}
+
+.box-wrapper {
+    width: 35%;
+    height: 50%;
+    background-color: #000;
+    position: absolute;
+    top: 27%;
+    left: 31%;
+    min-width: 750px;
+    min-height: 400px;
+    max-width: 750px;
+    max-height: 400px;
+    box-shadow: 0 0 40px 5px rgba(255,255,255,.15);
+    padding: 4rem 2rem;
+}
+
+.box-skin {
+    width: auto;
+    height: auto;
+}
+
+.login-main-text {
+    color: white;
+    margin: 0;
+    padding: 15px 10px 20px 10px;
+    text-align: center;
+}
+
+.login-extern-connection {
+    color: white;
+    width: 50%;
+    height: 100%;
+    vertical-align: top;
+    padding: 0 15px;
+    display: inline-block;
+    text-align: center;
+    border-right: 1px solid #1f1f1f;
+}
+
+.box-wrapper2 {
+    display: block;
+    margin: 25px 0;
+}
+
+.login-intern-connection {
+    color: white;
+    width: 260px;
+    height: 100%;
+    vertical-align: top;
+    padding: 0px 15px;
+    margin: 0px 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.login-textfield-connection {
+    color: grey;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid #555;
+    background: rgba(0,0,0,.9);
+    font-weight: 400;
+    font-style: italic;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 13px;
+    width: 105%;
+    height: 38px;
+    padding: 0 0 0 8px;
+    margin: 5px 6px 11px 0;
+}
+
+.login-button-connection {
+    text-decoration: none;
+    text-align: center;
+    border: 0;
+    color: black;
+    width: 272px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 5px 6px 11px 0;
+    background: #f90;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.login-button-connection:disabled {
+    text-decoration: none;
+    text-align: center;
+    border: 0;
+    color: #ccc;
+    width: 272px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 5px 6px 11px 0;
+    background: #2f2f2f;
+    border-radius: 5px;
+    font-weight: 700;
+    outline: none;
+}
+
+.login-create-button {
+    text-decoration: none;
+    color: #f90;
+    font-weight: 700;
+    cursor: pointer;
+    background: transparent;
+    border: 0px;
+    outline: none;
+}
+
+.login-external-api-google {
+    background: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+
+.create-account-main-text {
+    color: white;
+    margin: 0;
+    padding: 15px 10px 20px 10px;
+    text-align: center;
+}
+
+.create-account-text-field {
+    color: grey;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid #555;
+    background: rgba(0,0,0,.9);
+    font-weight: 400;
+    font-style: italic;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 13px;
+    width: 100%;
+    height: 38px;
+    margin: 10px 10px 20px 0px;
+}
+
+.create-account-description-text-field {
+    color: white;
+    margin: 0%;
+    margin: 5px 0px 0px 0px;
+    text-align: start;
+}
+
+.create-account-button {
+    text-decoration: none;
+    text-align: center;
+    border: 0;
+    color: black;
+    width: 272px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 5px 6px 11px 0;
+    background: #f90;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.create-account-button:disabled {
+    text-decoration: none;
+    text-align: center;
+    border: 0;
+    color: #ccc;
+    width: 272px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 5px 6px 11px 0;
+    background: #2f2f2f;
+    border-radius: 5px;
+    font-weight: 700;
+    margin: 0px 33%;
+    outline: none;
+}

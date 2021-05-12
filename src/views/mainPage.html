@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashub</title>
+
+        <base href="/">
+
+        <link rel = "stylesheet" type = "text/css" href = "./css/mainPage.css">
+        <link rel = "stylesheet" type = "text/css" href = "./css/widget.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script src="widgets/widget.js"></script>
+    </head>
+    <body>
+        <div class="dashboard box-container-fancy-fixed dashboard-overflow">
+            <div id="wrapper">
+                <div class="dashboard-header-wrapper">
+                    <div class="dashboard-header-content">
+                        <button class="dashboard-button-title" onclick="">
+                            <a class="dashboard-button-title-dash">Das</a>
+                            <a class="dashboard-button-title-dash dashboard-button-title-hub">hub</a>
+                        </button>
+                        <button id="adder" class="dashboard-add-widget" onclick="pressWidgetButton()">
+                            <img src="./pictures/svg/round-add-button.svg" /></button>
+                        <button id="connector" class="dashboard-access-connection" onclick="dashboardConnect()">
+                            <img src="./pictures/svg/profile-user.svg" />
+                        </button>
+                        <button id="disconnector" class="dashboard-access-connection" onclick="dashboardDisconnect()" style="display: none;">
+                            <img src="./pictures/svg/profile-user-connected.svg" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="widget-selection">
+                <ul id="widget-list" style="display: none;">
+                    <li><button id="weather" type="string" name="weather" value="weather" onclick="selectWidget(document.getElementById('weather').value)">City Weather</button></li>
+                    <li><button id="covid" type="string" name="covid" value="covid" onclick="selectWidget(document.getElementById('covid').value)">Country Covid</button></li>
+                    <li><button id="zipcode" type="string" name="zipcode" value="zipcode" onclick="selectWidget(document.getElementById('zipcode').value)">Zip Code Info</button></li>
+                    <li><button id="youtube" type="string" name="youtube" value="youtube" onclick="selectWidget(document.getElementById('youtube').value)">Youtube</button></li>
+                    <li><button id="ip" type="string" name="ip" value="ip" onclick="selectWidget(document.getElementById('ip').value)">IP address</button></li>
+                    <li><button id="currency" type="string" name="currency" value="currency" onclick="selectWidget(document.getElementById('currency').value)">Currency</button></li>
+                </ul>
+            </div>
+            <div id="widget-page" class="dashboard-widget-page">
+            </div>
+        </div>        
+        <script src="connect.js"></script>
+
+        <script src="widgets/weather.js"></script>
+        <script src="widgets/covid.js"></script>
+        <script src="widgets/ip.js"></script>
+        <script src="widgets/currency.js"></script>
+        <script src="widgets/youtube.js"></script>
+        <script src="widgets/zipcode.js"></script>
+        <script>$(document).ready(function(e) {
+            fromDatabaseLoadPage(e);
+        });
+        </script>
+    </body>
+</html>

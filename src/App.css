@@ -1,0 +1,126 @@
+.dashboard {
+  text-align: left;
+}
+
+.dashboard-header {
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.addButton {
+  margin: 15px;
+  background: transparent;
+  border: transparent;
+  border-radius: 25px;
+  box-shadow: 0 0 1em black;
+}
+
+.addButton:focus {
+  margin: 15px;
+  background: transparent;
+  border: hidden;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 0 1.5em black;
+}
+
+.addButtonPicture {
+  height: 15em;
+  padding: 15px;
+}
+
+.box-container {
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.box-container-overflow {
+  overflow: auto;
+  overflow-y: scroll;
+}
+
+.box-container-fancy-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.box-container-fancy {
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 8010;
+}
+
+.box-wrapper {
+  width: 35%;
+  height: 40%;
+  background-color: #000;
+  position: absolute;
+  top: 27%;
+  left: 31%;
+  min-width: 750px;
+  min-height: 300px;
+  max-width: 750px;
+  max-height: 300px;
+  box-shadow: 0 0 40px 5px rgba(255,255,255,.15);
+  padding: 4rem 2rem;
+}
+
+.box-skin {
+  width: auto;
+  height: auto;
+}
+
+.login-main-text {
+  color: white;
+  margin: 0;
+  padding: 15px 10px 20px 10px;
+  text-align: center;
+}
+
+.login-extern-connection {
+  color: white;
+  width: 50%;
+  height: 100%;
+  vertical-align: top;
+  padding: 0 15px;
+  display: inline-block;
+  text-align: center;
+  border-right: 1px solid #1f1f1f;
+}
+
+.box-wrapper2 {
+  display: block;
+  margin: 25px 0;
+}
+
+.login-intern-connection {
+  color: white;
+  width: 260px;
+  height: 100%;
+  vertical-align: top;
+  padding: 0px 15px;
+  margin: 0px 15px;
+  display: inline-block;
+  text-align: center;
+}
+
+.login-textfield-connection {
+  color: grey;
+  display: block;
+  border-radius: 5px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: arial,helvetica,sans-serif;
+  font-size: 13px;
+  width: 100%;
+  height: 38px;
+  padding: 0 0 0 8px;
+  margin: 5px 6px 11px 0;
+}

@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <head>
+            <title>Dashub</title>
+    
+            <base href="/">
+    
+            <link rel = "stylesheet" type = "text/css" href = "./css/mainPage.css">
+            <link rel = "stylesheet" type = "text/css" href = "./css/widget.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        </head>
+    </head>
+    <body>
+        <div id="logger" class="box-container box-container-overflow box-container-fancy box-container-fancy-fixed">
+            <div class="box-wrapper">
+                <div class="box-skin">
+                    <div id="creation">
+                        <h1 class="create-account-main-text" style="font-weight: 700;">
+                            Create an account
+                        </h1>
+                        <div style="margin-left: 25%; display: inline-block;"></div>
+                        <div style="text-align: center; display: inline-block; width: 50%;">
+                            <form>
+                                <h3 class="create-account-description-text-field">Username</h3>
+                                <input class="create-account-text-field" type="username" name="username" value="Username" onfocus="this.value=''" required></input>
+                                <h3 class="create-account-description-text-field">Email</h3>
+                                <input class="create-account-text-field" type="email" name="email" value="Email" onfocus="this.value=''" required></input>
+                                <h3 class="create-account-description-text-field">Password</h3>
+                                <input class="create-account-text-field" type="password" name="password" value="*********" onfocus="this.value=''" required></input>
+                            </form>
+                            <a href="/signup" class="create-account-button" style="padding: 18px 50px;">
+                                Create account
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
